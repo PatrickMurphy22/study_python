@@ -23,6 +23,8 @@
 
 # print(msg)
 
+
+#  IF ELSE 
 # ---------------------------------------------------------------------------------------------------------
 
 # house_price = 1000000
@@ -96,6 +98,8 @@
 # if 18 <= age < 65:
 #     print("Eligable")
 
+
+# FOR LOOPS
 # ---------------------------------------------------------------------------------------------------------
 
 # for number in range(1, 20, 2):
@@ -111,8 +115,98 @@
 # else: 
 #     print("Attempted 3 times and failed")
 
+
+# FOR LOOPS
 # ---------------------------------------------------------------------------------------------------------
 
 # for x in range(5 + 1):
 #     for y in range(3 + 1):
 #         print(f"({x} , {y})")
+
+
+# WHILE LOOPS
+# ---------------------------------------------------------------------------------------------------------
+
+# number = .01
+# while number < 10000000:
+#     print(number)
+#     number *= 2
+
+# command = ""
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+# INFINITE LOOP
+# command = ""
+# while True:
+#     command = input("> ")
+#     print("ECHO", command)
+#     if command.lower() == "quit":
+#         break
+
+# count = 0
+# for numbers in range(1, 10):
+#     if numbers * 2 < 10:
+#         even_number = print(numbers * 2)
+#         count += 1
+        
+# print(f"we have {count} numbers")
+
+
+# FUNCTIONS
+# -----------------------------------------------------------------------------------------------------------  
+
+# def greet(first_name, last_name):
+#     print(f"Hi {first_name} {last_name}")
+#     print("Welcome aboard")
+    
+# greet("Paddy", "Murphy")
+
+# Arguements - The actual value for the given parameter.
+# Patameters - Input that is defined for the function.
+
+# There are two types of functions.
+# 1 - Preforms a task
+# 2 - Calculate and returns a value
+
+# Type 1.
+# def greet(name):
+#     print(f"Hi, {name}")
+
+# Alter function type 1 to preform like type 2.
+# def get_greeting(name):
+#     return f"Hi, {name}"
+
+# message = get_greeting("Paddy")
+# print(message)
+# file = open("content.txt", "w")       >>> Creates file named content.txt
+# file.write(message)                   >>> writes value stored in message variable into the file.
+
+# def increment(number, by):
+#     return number + by
+# Key word argument, makes code more readable. sounds like 2 by 1, which is 3.
+# print(increment(2, by=1))
+
+# def increment(number, by=1): >>> parameter that is used opionally 
+#     return number + by 
+
+# print(increment(15))
+
+# def multiply(*numbers): >>> *numbers is used instead of multiple arguements to create 
+#                         >>>  a tuple that is then used similarly as multiple parameters
+#     print(numbers)
+
+# multiply(2,3,4,5)
+
+
+# def multiply(*numbers):
+#     total = 1
+#     for number in numbers: >>> iterates through the tuple.
+#         print(number)      >>> Then prints each index.
+#         total *= number
+#     return total
+
+# print(multiply(2,3,4,5))
+
+#  
